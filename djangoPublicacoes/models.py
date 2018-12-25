@@ -83,37 +83,37 @@ class termosUalg(models.Model):
     def __str__(self):
     	return (self.termo)
     class Meta:
-        verbose_name = 'Termo de procura ualg'
-        verbose_name_plural = 'Termos de procura ualg'
+        verbose_name = 'UALG'
+        verbose_name_plural = 'UALG'
 
 class termosHospital(models.Model):
     termo = models.CharField(max_length=1000,null=True, blank=True)
     def __str__(self):
     	return (self.termo)
     class Meta:
-        verbose_name = 'Termo de procura hospital'
-        verbose_name_plural = 'Termos de procura hospital'
+        verbose_name = 'Hospital'
+        verbose_name_plural = 'Hospitais'
 
 class termosUnidadeOrganica(models.Model):
     termo = models.CharField(max_length=1000,null=True, blank=True)
     def __str__(self):
     	return (self.termo)
     class Meta:
-        verbose_name = 'Termo de procura UO'
-        verbose_name_plural = 'Termos de procura UO'
+        verbose_name = 'Unidade Orgânica'
+        verbose_name_plural = 'Unidades Orgânicas'
 
 class centroInvestigacao(models.Model):
     termo = models.CharField(max_length=1000,null=True, blank=True)
     def __str__(self):
     	return (self.termo)
     class Meta:
-        verbose_name = 'Termo de procura centro de investigacao'
-        verbose_name_plural = 'Termos de procura centro de investigacao'
+        verbose_name = 'Centro de investigação'
+        verbose_name_plural = 'Centros de investigação'
 
 class paises(models.Model):
     termo = models.CharField(max_length=1000,null=True, blank=True)
     def __str__(self):
     	return (self.termo)
     class Meta:
-        verbose_name = 'Termo de procura paises'
-        verbose_name_plural = 'Termos de procura paises'
+        verbose_name = 'País'
+        verbose_name_plural = 'Países'

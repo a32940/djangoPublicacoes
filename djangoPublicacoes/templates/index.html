@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<body>
+ 
+    <div class="w3-container w3-padding-32" id="projects">
+    </div>
+
+    <div class="w3-row-padding">
+        <button type="button" onclick="location.href='admin'" >Administração</button><br><br><br>
+        <button type="button" onclick="location.href='verAfiliacao'" >Verificar Afiliação Ualg</button><br>
+        <button type="button" onclick="location.href='verHospital'" >Verificar Hospital</button><br>
+        <button type="button" onclick="location.href='verUnidadeOrganica'" >Verificar Unidades Orgânicas</button><br>
+        <button type="button" onclick="location.href='verCentroInvestigacao'" >Verificar Centros de Investigação</button><br>
+        <button type="button" onclick="location.href='verPaises'" >Verificar Países</button><br>
+        {{ msg }}
+    </div>
+
+
+
+</body>
+
+
+
+        
+        
+        
+{% endblock %}
+
