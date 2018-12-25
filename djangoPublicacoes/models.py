@@ -21,7 +21,7 @@ class publicacoes(models.Model):
     SP= models.CharField(max_length=200000,null=True, blank=True)
     HO= models.CharField(max_length=200000,null=True, blank=True)
     DE= models.CharField(max_length=200000,null=True, blank=True)
-    ID= models.CharField(max_length=200000,null=True, blank=True)
+    ID_f= models.CharField(max_length=200000,null=True, blank=True)
     AB= models.CharField(max_length=200000,null=True, blank=True)
     C1= models.CharField(max_length=200000,null=True, blank=True)
     RP= models.CharField(max_length=200000,null=True, blank=True)
@@ -69,15 +69,51 @@ class publicacoes(models.Model):
     HC= models.CharField(max_length=200000,null=True, blank=True)
     HP= models.CharField(max_length=200000,null=True, blank=True)
     DA= models.CharField(max_length=200000,null=True, blank=True)
-	#def __str__(self):
-	#	return (self.num)
-		#self.num + " " +
+    Hospital = models.CharField(max_length=50,null=True, blank=True)
+    UalgAfiliacao =  models.CharField(max_length=50,null=True, blank=True)
+    unidadeOriganica = models.CharField(max_length=1000,null=True, blank=True)
+    centroInvestigacao = models.CharField(max_length=1000,null=True, blank=True)
+    pais= models.CharField(max_length=1000,null=True, blank=True)
     class Meta:
         verbose_name = 'Publicação'
         verbose_name_plural = 'Publicações'
 
-class exclusoes(models.Model):
+class termosUalg(models.Model):
     termo = models.CharField(max_length=1000,null=True, blank=True)
+    def __str__(self):
+    	return (self.termo)
     class Meta:
-        verbose_name = 'Termo de procura'
-        verbose_name_plural = 'Termos de procura'
+        verbose_name = 'Termo de procura ualg'
+        verbose_name_plural = 'Termos de procura ualg'
+
+class termosHospital(models.Model):
+    termo = models.CharField(max_length=1000,null=True, blank=True)
+    def __str__(self):
+    	return (self.termo)
+    class Meta:
+        verbose_name = 'Termo de procura hospital'
+        verbose_name_plural = 'Termos de procura hospital'
+
+class termosUnidadeOrganica(models.Model):
+    termo = models.CharField(max_length=1000,null=True, blank=True)
+    def __str__(self):
+    	return (self.termo)
+    class Meta:
+        verbose_name = 'Termo de procura UO'
+        verbose_name_plural = 'Termos de procura UO'
+
+class centroInvestigacao(models.Model):
+    termo = models.CharField(max_length=1000,null=True, blank=True)
+    def __str__(self):
+    	return (self.termo)
+    class Meta:
+        verbose_name = 'Termo de procura centro de investigacao'
+        verbose_name_plural = 'Termos de procura centro de investigacao'
+
+class paises(models.Model):
+    termo = models.CharField(max_length=1000,null=True, blank=True)
+    def __str__(self):
+    	return (self.termo)
+    class Meta:
+        verbose_name = 'Termo de procura paises'
+        verbose_name_plural = 'Termos de procura paises'

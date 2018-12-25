@@ -15,11 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import verExclusoes, listaExclusoes
+from .views import verExclusoes, listaExclusoes, verAfiliacao, verHospital,verUnidadeOrganica, verCentroInvestigacao, verPaises
 from django.conf.urls import url,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'verExclusoes',verExclusoes,name='verExclusoes'),
     url(r'listaExclusoes',listaExclusoes,name='verExclusoes'),
+    url(r'verAfiliacao',verAfiliacao,name='verAfiliacao'),
+    url(r'verHospital',verHospital,name='verHospital'),
+    url(r'verUnidadeOrganica',verUnidadeOrganica,name='verUnidadeOrganica'),
+    url(r'verCentroInvestigacao',verCentroInvestigacao,name='verCentroInvestigacao'),
+    url(r'verPaises',verPaises,name='verPaises'),
 ]

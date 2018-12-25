@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<body>
+ 
+    <div class="w3-container w3-padding-32" id="projects">
+    </div>
+
+    <div class="w3-row-padding">
+        {{ form }}
+    </div>
+
+
+
+
+
+
+</body>
+
+
+<script>
+    var csrftoken = $.cookie('csrftoken');
+    function csrfSafeMethod(method) {
+        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+    }
+    $.ajaxSetup({
+        beforeSend: function(xhr, settings) {
+            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        }
+    });
+    
+    
+    var csrftoken = $.cookie('csrftoken');
+    function csrfSafeMethod(method) {
+        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+    }
+    $.ajaxSetup({
+        beforeSend: function(xhr, settings) {
+            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        }
+    });
+   
+    function infoProd() {
+        $.ajax({
+            type: 'get',
+            url: '/listaExclusoes',
+            dataType: 'JSON',
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify(),
+            success: function(data) {
+                console.log(data)
+                // $('#id_subject').val(data.produtos[0].id);
+            },
+            error: function(rs, e) {
+                console.log("Error: "+ e);
+            }
+        });
+    }
+    
+    console.log("casd")
+    
+    
+    
+    window.onload = infoProd;
+
+        
+        
+</script>
+        
+        
+        
+{% endblock %}
+

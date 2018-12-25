@@ -1,11 +1,11 @@
 from django import forms
 from django.forms import ModelForm,Textarea,TextInput,ClearableFileInput
-from .models import exclusoes,publicacoes
+from .models import termosUalg,publicacoes
 
 class ExclusoesForm(ModelForm):
     class Meta:
-        model = exclusoes
+        model = termosUalg
         fields = ['termo']
         widgets = {
-            'termo':forms.Select(choices=exclusoes.objects.all().values_list()),
+            'termo':forms.Select(choices=termosUalg.objects.all().values_list()),
         }
