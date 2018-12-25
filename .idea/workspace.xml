@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df205f1b-791c-421e-8b78-80e3dfe0672e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/djangoPublicacoes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoPublicacoes/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoPublicacoes/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoPublicacoes/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoPublicacoes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoPublicacoes/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoPublicacoes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoPublicacoes/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoPublicacoes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoPublicacoes/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="df205f1b-791c-421e-8b78-80e3dfe0672e" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,9 +102,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="953" />
+    <option name="width" value="967" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -209,7 +200,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="1" />
+    <frame x="953" y="0" width="967" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -219,7 +210,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Terminal" weight="0.38961038" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5131291" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5170893" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="SciView" />
